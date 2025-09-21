@@ -13,10 +13,9 @@
         }
         .gradient-bg {
             background-image: linear-gradient(120deg, #dbe2e2 0%, #4f95f1 100%);
-            padding: 30px,40px;
         }
         .btn-gradient {
-             background-image: linear-gradient(to right, #26de81, #00bcd4);
+            background-image: linear-gradient(to right, #26de81, #00bcd4);
         }
     </style>
 </head>
@@ -25,35 +24,8 @@
     <div class="min-h-screen flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full grid md:grid-cols-2">
             
-            <!-- Left Side -->
-            <div class="p-10 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center space-x-2">
-                        <div class="w-8 h-8 bg-blue-600 flex items-center justify-center rounded-md text-white font-bold">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <span class="text-2xl font-bold text-gray-900">InternLink</span>
-                    </div>
-                    <h1 class="text-4xl font-bold mt-8 text-gray-900">Find Your Dream Internship Today</h1>
-                    <p class="mt-4 text-gray-600">Our AI-powered platform matches you with the perfect internships based on your unique skills, experience, and aspirations.</p>
-                </div>
-                <div>
-                    <p class="text-sm font-medium text-gray-500 mb-4">Login or Register with:</p>
-                    <div class="space-y-3">
-                        <button class="w-full flex items-center justify-center py-3 px-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
-                            <i class="fab fa-google mr-3"></i> Continue with Google
-                        </button>
-                        <button class="w-full flex items-center justify-center py-3 px-4 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition duration-300">
-                           <i class="fab fa-linkedin-in mr-3"></i> Continue with LinkedIn
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Side (Form Container) -->
-            <div id="form-container" class="p-10">
-                 <!-- Sign Up Form -->
-                <div id="signup-form-content">
+            <div id="form-container" class="p-10 md:order-last">
+                 <div id="signup-form-content">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6">Create your account</h2>
                     <form class="space-y-4">
                         <div>
@@ -73,7 +45,7 @@
                             <input type="password" id="confirm-password" placeholder="••••••••" required class="mt-1 block w-full px-4 py-3 border border-gray-200 rounded-lg bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
                         </div>
                         <div>
-                            <button type="submit" class="w-half flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-white btn-gradient font-semibold">
+                            <button type="submit" class="w-full md:w-auto justify-center py-3 px-8 border border-transparent rounded-lg shadow-sm text-white btn-gradient font-semibold">
                                 Sign Up
                             </button>
                         </div>
@@ -83,7 +55,6 @@
                     </form>
                 </div>
                 
-                <!-- Login Form (hidden by default) -->
                 <div id="login-form-content" class="hidden">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6">Login</h2>
                     <form class="space-y-5">
@@ -105,16 +76,41 @@
                             </div>
                         </div>
                         <div>
-                            <button type="submit"  class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-white btn-gradient font-semibold" id="mks">
-                               <a href="das1.html"> Sign In</a>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-white btn-gradient font-semibold" id="mks">
+                               Sign In
                             </button>
                         </div>
                         <p class="text-sm text-center text-gray-500">
-                            Don't have an account? <a href="#mks" id="show-signup" class="font-medium text-blue-600 hover:underline">Sign up</a>
+                            Don't have an account? <a href="#" id="show-signup" class="font-medium text-blue-600 hover:underline">Sign up</a>
                         </p>
                     </form>
                 </div>
             </div>
+
+            <div class="p-10 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-blue-600 flex items-center justify-center rounded-md text-white font-bold">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-900">InternLink</span>
+                    </div>
+                    <h1 class="text-4xl font-bold mt-8 text-gray-900">Find Your Dream Internship Today</h1>
+                    <p class="mt-4 text-gray-600">Our AI-powered platform matches you with the perfect internships based on your unique skills, experience, and aspirations.</p>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <p class="text-sm font-medium text-gray-500 mb-4">Login or Register with:</p>
+                    <div class="space-y-3">
+                        <button class="w-full flex items-center justify-center py-3 px-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-google mr-3"></i> Continue with Google
+                        </button>
+                        <button class="w-full flex items-center justify-center py-3 px-4 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition duration-300">
+                           <i class="fab fa-linkedin-in mr-3"></i> Continue with LinkedIn
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     
@@ -138,4 +134,3 @@
     </script>
 </body>
 </html>
-
